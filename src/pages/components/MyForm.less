@@ -1,0 +1,104 @@
+.formItem{
+    :global{
+        border-bottom: 1px solid #d3d3d3;
+        padding: 24px 0px;
+        .top-div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .required{
+                color: red;
+                margin-right: 8px;
+            }
+            .title{
+                font-size: 32px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+            }
+        }
+        .bottom-div{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .at-input{
+                margin-left: 0;
+                padding: 0px 0px;
+            }
+            .at-input{
+                // padding: 0px;
+                width: 100vw;
+                input::-webkit-input-placeholder {
+                    font-size: 32px;
+                    // text-align: right;
+                }
+                input:-moz-placeholder {
+                    font-size: 32px;
+                    // text-align: right;
+                }
+                input::-moz-placeholder {
+                    font-size: 32px;
+                    // text-align: right;
+                }
+                input:-ms-input-placeholder {
+                    font-size: 32px;
+                    // text-align: right;
+                }
+
+            }
+            .area-value{
+                width: 91vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left-value{
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    color: #333;
+                    font-size: 32px;
+                    &.gray{
+                        color: #636c72;
+                        font-size: 32px;
+                    }
+                }
+                .right-icon{
+
+                }
+                
+            }
+           
+        }
+    }
+}
+
+.myForm{
+    overflow: auto;
+    margin-bottom: 120px;
+    &.hastabbar{
+        margin-bottom: 60px;
+    }
+    :global{
+        .btn-wrapper{
+            background-color: #ffffff;
+            position: fixed;
+            padding: 18px 18px 32px 18px;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            width: 95.5%;
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            .btn{
+              width: 180px;
+            }
+            &.hastabbar{
+                bottom: 105px;
+            }
+        }
+    }
+}

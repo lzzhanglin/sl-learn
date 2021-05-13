@@ -1,0 +1,72 @@
+.questionDetail{
+    padding: 24px;
+    position: relative;
+    :global{
+        .top-div{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #d3d3d3;
+            .title{
+                width: 100%;
+                padding: 18px;
+                text-align: center;
+                font-size: 32px;
+            }
+            .operate-tip{
+                text-align: center;
+                font-size: 24px;
+                color: #808080;
+                padding-bottom: 12px;
+            }
+        }
+        .middle-div{
+            padding-right: 18px;
+            margin: 160px 16px 16px 0px;
+            padding-bottom: 18px;
+            border-bottom: 2px solid red;
+            .content{
+                font-size: 32px;
+            }
+        }
+        .clear-wrapper{
+            position: fixed;
+            right: 6px; 
+            top: 15%;
+            transform: translateY(-15%);
+        }
+        .issue-wrapper{
+            position: fixed;
+            right: 6px; 
+            top: 30%;
+            transform: translateY(-30%);
+        }
+        .edit-wrapper{
+            position: fixed;
+            right: 6px; 
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.issueModal{
+    :global{
+
+    }
+}
+
+.editModal{
+    :global{
+        .save-btn-wrapper{
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            .at-button{
+                width: 220px;
+                margin: 0px 18px;
+            }
+        }
+    }
+}

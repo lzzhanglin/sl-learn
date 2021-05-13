@@ -1,6 +1,8 @@
 export default {
   pages: [
-    'pages/index/index'
+    'pages/index/index',
+    'pages/subject/AddQuestion',
+    'pages/subject/QuestionDetail',
   ],
   window: {
     backgroundTextStyle: 'light',
