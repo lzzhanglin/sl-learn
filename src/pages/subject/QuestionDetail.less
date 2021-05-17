@@ -26,9 +26,17 @@
             margin: 160px 16px 16px 0px;
             padding-bottom: 18px;
             border-bottom: 2px solid red;
+            
             .content{
                 font-size: 32px;
             }
+        }
+        .answer-title{
+            width: 100%; 
+            font-size: 32px;
+            padding: 6px;
+            text-align: center;
+            color: #808080;
         }
         .clear-wrapper{
             position: fixed;
@@ -42,10 +50,16 @@
             top: 30%;
             transform: translateY(-30%);
         }
-        .edit-wrapper{
+        .annotation-wrapper{
             position: fixed;
             right: 6px; 
             top: 50%;
+            transform: translateY(-60%);
+        }
+        .edit-wrapper{
+            position: fixed;
+            right: 6px; 
+            top: 60%;
             transform: translateY(-50%);
         }
     }
@@ -54,6 +68,27 @@
 .issueModal{
     :global{
 
+    }
+}
+
+.annotationModal{
+    :global{
+        .modal-top{
+            .choose-text{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .save-btn-wrapper{
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            .at-button{
+                width: 220px;
+                margin: 0px 18px;
+            }
+        }
     }
 }
 
